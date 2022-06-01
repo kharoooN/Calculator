@@ -31,14 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.btnClose = new System.Windows.Forms.Button();
             this.lblAppName = new System.Windows.Forms.Label();
-            this.lblDisplay = new System.Windows.Forms.Label();
             this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
+            this.btnButton = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@
             this.btnRemoveAll = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnYuzde = new System.Windows.Forms.Button();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnClose
@@ -81,21 +81,9 @@
             this.lblAppName.TabIndex = 2;
             this.lblAppName.Text = "Calculator";
             // 
-            // lblDisplay
-            // 
-            this.lblDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDisplay.Location = new System.Drawing.Point(6, 38);
-            this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(305, 86);
-            this.lblDisplay.TabIndex = 0;
-            this.lblDisplay.Text = "0";
-            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblDisplay.Click += new System.EventHandler(this.lblDisplay_Click);
-            // 
             // btn7
             // 
+            this.btn7.AccessibleName = "";
             this.btn7.BackColor = System.Drawing.Color.Black;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -105,10 +93,11 @@
             this.btn7.TabIndex = 3;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn8
             // 
+            this.btn8.AccessibleName = "";
             this.btn8.BackColor = System.Drawing.Color.Black;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -118,9 +107,11 @@
             this.btn8.TabIndex = 3;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn9
             // 
+            this.btn9.AccessibleName = "";
             this.btn9.BackColor = System.Drawing.Color.Black;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -130,9 +121,11 @@
             this.btn9.TabIndex = 3;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn6
             // 
+            this.btn6.AccessibleName = "";
             this.btn6.BackColor = System.Drawing.Color.Black;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -142,9 +135,11 @@
             this.btn6.TabIndex = 3;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn5
             // 
+            this.btn5.AccessibleName = "";
             this.btn5.BackColor = System.Drawing.Color.Black;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -154,9 +149,11 @@
             this.btn5.TabIndex = 3;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // button4
             // 
+            this.button4.AccessibleName = "";
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -166,21 +163,25 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btnButton_Click);
             // 
-            // btn1
+            // btnButton
             // 
-            this.btn1.BackColor = System.Drawing.Color.Black;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.btn1.Location = new System.Drawing.Point(6, 372);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(74, 49);
-            this.btn1.TabIndex = 3;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
+            this.btnButton.AccessibleName = "";
+            this.btnButton.BackColor = System.Drawing.Color.Black;
+            this.btnButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.btnButton.Location = new System.Drawing.Point(6, 372);
+            this.btnButton.Name = "btnButton";
+            this.btnButton.Size = new System.Drawing.Size(74, 49);
+            this.btnButton.TabIndex = 3;
+            this.btnButton.Text = "1";
+            this.btnButton.UseVisualStyleBackColor = false;
+            this.btnButton.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn2
             // 
+            this.btn2.AccessibleName = "";
             this.btn2.BackColor = System.Drawing.Color.Black;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -190,9 +191,11 @@
             this.btn2.TabIndex = 3;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn3
             // 
+            this.btn3.AccessibleName = "";
             this.btn3.BackColor = System.Drawing.Color.Black;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -202,9 +205,11 @@
             this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btn0
             // 
+            this.btn0.AccessibleName = "";
             this.btn0.BackColor = System.Drawing.Color.Black;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn0.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
@@ -214,9 +219,11 @@
             this.btn0.TabIndex = 3;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btnButton_Click);
             // 
             // btnOndalik
             // 
+            this.btnOndalik.AccessibleName = "";
             this.btnOndalik.BackColor = System.Drawing.Color.Black;
             this.btnOndalik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOndalik.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -226,9 +233,11 @@
             this.btnOndalik.TabIndex = 3;
             this.btnOndalik.Text = ",";
             this.btnOndalik.UseVisualStyleBackColor = false;
+            this.btnOndalik.Click += new System.EventHandler(this.btnOndalik_Click);
             // 
             // btnNegativeorPositive
             // 
+            this.btnNegativeorPositive.AccessibleName = "";
             this.btnNegativeorPositive.BackColor = System.Drawing.Color.Black;
             this.btnNegativeorPositive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNegativeorPositive.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -242,6 +251,7 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.AccessibleName = "";
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -251,9 +261,11 @@
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "<-";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnMultiply
             // 
+            this.btnMultiply.AccessibleName = "";
             this.btnMultiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMultiply.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -263,9 +275,11 @@
             this.btnMultiply.TabIndex = 3;
             this.btnMultiply.Text = "x";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnSub
             // 
+            this.btnSub.AccessibleName = "";
             this.btnSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnSub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSub.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
@@ -275,9 +289,11 @@
             this.btnSub.TabIndex = 3;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = false;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
             // btnSum
             // 
+            this.btnSum.AccessibleName = "";
             this.btnSum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnSum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSum.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -287,9 +303,11 @@
             this.btnSum.TabIndex = 3;
             this.btnSum.Text = "+";
             this.btnSum.UseVisualStyleBackColor = false;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
             // btnEqual
             // 
+            this.btnEqual.AccessibleName = "";
             this.btnEqual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEqual.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -299,9 +317,11 @@
             this.btnEqual.TabIndex = 3;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = false;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnDivide
             // 
+            this.btnDivide.AccessibleName = "";
             this.btnDivide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDivide.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -311,9 +331,11 @@
             this.btnDivide.TabIndex = 3;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = false;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnRemoveAll
             // 
+            this.btnRemoveAll.AccessibleName = "";
             this.btnRemoveAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnRemoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRemoveAll.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
@@ -323,9 +345,11 @@
             this.btnRemoveAll.TabIndex = 3;
             this.btnRemoveAll.Text = "C";
             this.btnRemoveAll.UseVisualStyleBackColor = false;
+            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.AccessibleName = "";
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
@@ -335,9 +359,11 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "CE";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnYuzde
             // 
+            this.btnYuzde.AccessibleName = "";
             this.btnYuzde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnYuzde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnYuzde.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
@@ -348,6 +374,21 @@
             this.btnYuzde.Text = "%";
             this.btnYuzde.UseVisualStyleBackColor = false;
             // 
+            // txtDisplay
+            // 
+            this.txtDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.txtDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDisplay.ForeColor = System.Drawing.Color.White;
+            this.txtDisplay.Location = new System.Drawing.Point(6, 44);
+            this.txtDisplay.Multiline = true;
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.ReadOnly = true;
+            this.txtDisplay.Size = new System.Drawing.Size(305, 86);
+            this.txtDisplay.TabIndex = 4;
+            this.txtDisplay.Text = "0";
+            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +396,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(314, 476);
+            this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnOndalik);
             this.Controls.Add(this.btnSub);
@@ -362,7 +404,7 @@
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btnNegativeorPositive);
-            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btnButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btnDivide);
@@ -378,7 +420,6 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.lblAppName);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.lblDisplay);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -393,14 +434,13 @@
         #endregion
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblAppName;
-        private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnButton;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
@@ -415,6 +455,7 @@
         private System.Windows.Forms.Button btnRemoveAll;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnYuzde;
+        private System.Windows.Forms.TextBox txtDisplay;
     }
 }
 
