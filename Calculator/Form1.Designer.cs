@@ -41,17 +41,17 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.btnOndalik = new System.Windows.Forms.Button();
-            this.btnNegativeorPositive = new System.Windows.Forms.Button();
+            this.btnDecimal = new System.Windows.Forms.Button();
+            this.btnNegativeOrPositive = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnSub = new System.Windows.Forms.Button();
             this.btnSum = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
-            this.btnRemoveAll = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnYuzde = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnClearEntry = new System.Windows.Forms.Button();
+            this.btnPercentage = new System.Windows.Forms.Button();
             this.txtDisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -221,33 +221,34 @@
             this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btnButton_Click);
             // 
-            // btnOndalik
+            // btnDecimal
             // 
-            this.btnOndalik.AccessibleName = "";
-            this.btnOndalik.BackColor = System.Drawing.Color.Black;
-            this.btnOndalik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOndalik.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnOndalik.Location = new System.Drawing.Point(160, 423);
-            this.btnOndalik.Name = "btnOndalik";
-            this.btnOndalik.Size = new System.Drawing.Size(74, 49);
-            this.btnOndalik.TabIndex = 3;
-            this.btnOndalik.Text = ",";
-            this.btnOndalik.UseVisualStyleBackColor = false;
-            this.btnOndalik.Click += new System.EventHandler(this.btnOndalik_Click);
+            this.btnDecimal.AccessibleName = "";
+            this.btnDecimal.BackColor = System.Drawing.Color.Black;
+            this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDecimal.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnDecimal.Location = new System.Drawing.Point(160, 423);
+            this.btnDecimal.Name = "btnDecimal";
+            this.btnDecimal.Size = new System.Drawing.Size(74, 49);
+            this.btnDecimal.TabIndex = 3;
+            this.btnDecimal.Text = ",";
+            this.btnDecimal.UseVisualStyleBackColor = false;
+            this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
-            // btnNegativeorPositive
+            // btnNegativeOrPositive
             // 
-            this.btnNegativeorPositive.AccessibleName = "";
-            this.btnNegativeorPositive.BackColor = System.Drawing.Color.Black;
-            this.btnNegativeorPositive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNegativeorPositive.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnNegativeorPositive.Location = new System.Drawing.Point(6, 423);
-            this.btnNegativeorPositive.Name = "btnNegativeorPositive";
-            this.btnNegativeorPositive.Size = new System.Drawing.Size(74, 49);
-            this.btnNegativeorPositive.TabIndex = 3;
-            this.btnNegativeorPositive.Text = "  +/-";
-            this.btnNegativeorPositive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNegativeorPositive.UseVisualStyleBackColor = false;
+            this.btnNegativeOrPositive.AccessibleName = "";
+            this.btnNegativeOrPositive.BackColor = System.Drawing.Color.Black;
+            this.btnNegativeOrPositive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNegativeOrPositive.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnNegativeOrPositive.Location = new System.Drawing.Point(6, 423);
+            this.btnNegativeOrPositive.Name = "btnNegativeOrPositive";
+            this.btnNegativeOrPositive.Size = new System.Drawing.Size(74, 49);
+            this.btnNegativeOrPositive.TabIndex = 3;
+            this.btnNegativeOrPositive.Text = "  +/-";
+            this.btnNegativeOrPositive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNegativeOrPositive.UseVisualStyleBackColor = false;
+            this.btnNegativeOrPositive.Click += new System.EventHandler(this.btnNegativeOrPositive_Click);
             // 
             // btnRemove
             // 
@@ -333,52 +334,53 @@
             this.btnDivide.UseVisualStyleBackColor = false;
             this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
-            // btnRemoveAll
+            // btnClear
             // 
-            this.btnRemoveAll.AccessibleName = "";
-            this.btnRemoveAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnRemoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRemoveAll.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRemoveAll.Location = new System.Drawing.Point(160, 216);
-            this.btnRemoveAll.Name = "btnRemoveAll";
-            this.btnRemoveAll.Size = new System.Drawing.Size(74, 49);
-            this.btnRemoveAll.TabIndex = 3;
-            this.btnRemoveAll.Text = "C";
-            this.btnRemoveAll.UseVisualStyleBackColor = false;
-            this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
+            this.btnClear.AccessibleName = "";
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClear.Location = new System.Drawing.Point(160, 216);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(74, 49);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "C";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClearEntry_Click);
             // 
-            // btnDelete
+            // btnClearEntry
             // 
-            this.btnDelete.AccessibleName = "";
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.Location = new System.Drawing.Point(83, 216);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(74, 49);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "CE";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnClearEntry.AccessibleName = "";
+            this.btnClearEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnClearEntry.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClearEntry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClearEntry.Location = new System.Drawing.Point(83, 216);
+            this.btnClearEntry.Name = "btnClearEntry";
+            this.btnClearEntry.Size = new System.Drawing.Size(74, 49);
+            this.btnClearEntry.TabIndex = 3;
+            this.btnClearEntry.Text = "CE";
+            this.btnClearEntry.UseVisualStyleBackColor = false;
+            this.btnClearEntry.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnYuzde
+            // btnPercentage
             // 
-            this.btnYuzde.AccessibleName = "";
-            this.btnYuzde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnYuzde.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnYuzde.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnYuzde.Location = new System.Drawing.Point(6, 216);
-            this.btnYuzde.Name = "btnYuzde";
-            this.btnYuzde.Size = new System.Drawing.Size(74, 49);
-            this.btnYuzde.TabIndex = 3;
-            this.btnYuzde.Text = "%";
-            this.btnYuzde.UseVisualStyleBackColor = false;
+            this.btnPercentage.AccessibleName = "";
+            this.btnPercentage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPercentage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPercentage.Location = new System.Drawing.Point(6, 216);
+            this.btnPercentage.Name = "btnPercentage";
+            this.btnPercentage.Size = new System.Drawing.Size(74, 49);
+            this.btnPercentage.TabIndex = 3;
+            this.btnPercentage.Text = "%";
+            this.btnPercentage.UseVisualStyleBackColor = false;
+            this.btnPercentage.Click += new System.EventHandler(this.btnPercentage_Click);
             // 
             // txtDisplay
             // 
             this.txtDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.txtDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDisplay.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDisplay.ForeColor = System.Drawing.Color.White;
             this.txtDisplay.Location = new System.Drawing.Point(6, 44);
             this.txtDisplay.Multiline = true;
@@ -398,12 +400,12 @@
             this.ClientSize = new System.Drawing.Size(314, 476);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.btnSum);
-            this.Controls.Add(this.btnOndalik);
+            this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnSub);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btnNegativeorPositive);
+            this.Controls.Add(this.btnNegativeOrPositive);
             this.Controls.Add(this.btnButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn5);
@@ -411,9 +413,9 @@
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btnEqual);
-            this.Controls.Add(this.btnYuzde);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnRemoveAll);
+            this.Controls.Add(this.btnPercentage);
+            this.Controls.Add(this.btnClearEntry);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
@@ -444,17 +446,17 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button btnOndalik;
-        private System.Windows.Forms.Button btnNegativeorPositive;
+        private System.Windows.Forms.Button btnDecimal;
+        private System.Windows.Forms.Button btnNegativeOrPositive;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.Button btnSum;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnDivide;
-        private System.Windows.Forms.Button btnRemoveAll;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnYuzde;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnClearEntry;
+        private System.Windows.Forms.Button btnPercentage;
         private System.Windows.Forms.TextBox txtDisplay;
     }
 }

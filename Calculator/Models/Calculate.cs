@@ -10,24 +10,24 @@ namespace Calculator.Models
     {
         public double Add(double number1, double number2)
         {
-            double sonuc = number1 + number2;
-            return sonuc;
+            double result = number1 + number2;
+            return result;
         }
 
         public double Subtraction(double number1, double number2)
         {
-            double sonuc = number1 - number2;
-            return sonuc;
+            double result = number1 - number2;
+            return result;
         }
         public double Multiply(double number1, double number2)
         {
-            double sonuc = number1 * number2;
-            return sonuc;
+            double result = number1 * number2;
+            return result;
         }
         public double Divide(double number1, double number2)
         {
-            double sonuc = number1 / number2;
-            return sonuc;
+            double result = number1 / number2;
+            return result;
         }
 
     }
